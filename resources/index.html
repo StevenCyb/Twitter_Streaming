@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+
+        <link rel="shortcut icon" href="./favicon.png" type="image/png" />
+        <link rel="icon" href="./favicon.png" type="image/png" />
+        <title>Twitter-Streaming</title>
+
+        <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+        <script src="/socket.io/socket.io.js"></script>
+        <script src="socket_communication.js"></script>
+        <script src="ranking_chart/ranking_chart.js"></script>
+        <script src="tweet_processing.js"></script>
+
+        <link rel="stylesheet" type="text/css" href="global_style.css">
+        <link rel="stylesheet" type="text/css" href="ranking_chart/ranking_chart.css">
+    </head>
+    <body>
+        <div id="track-option">
+            <input id="track-input" type="text" value="" maxlength="25" placeholder="What do you want to track?" onkeyup="checkAndFire(event);">
+            <div id="track-list"></div>
+        </div>
+        <div class="box-view">
+            <div class="box-view-head">Live-Tweets</div>
+            <ul class="box-view-body" id="live-tweet-view"></ul>
+        </div>
+        <div class="box-view">
+            <div class="box-view-head">Top-Hashtags</div>
+            <div" class="box-view-body">
+                <div id="top-hashtags-view">
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

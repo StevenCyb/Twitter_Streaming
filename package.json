@@ -1,0 +1,21 @@
+{
+  "name": "twitter_feedback",
+  "version": "1.0.0",
+  "description": "Later",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "later"
+  ],
+  "author": "Steven Cybinski",
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^1.19.2"
+  },
+  "dependencies": {
+    "node-tweet-stream": "^2.0.3",
+    "socket.io": "^2.3.0"
+  }
+}
